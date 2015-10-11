@@ -1,6 +1,6 @@
 ﻿namespace PTPIM
 {
-    partial class ConnetcionForm
+    partial class ConnectionForm
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.logBox = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IPBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.connectButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -43,12 +43,12 @@
             this.logBox.Size = new System.Drawing.Size(400, 124);
             this.logBox.TabIndex = 0;
             // 
-            // textBox1
+            // IPBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 213);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(400, 25);
-            this.textBox1.TabIndex = 1;
+            this.IPBox.Location = new System.Drawing.Point(12, 213);
+            this.IPBox.Name = "IPBox";
+            this.IPBox.Size = new System.Drawing.Size(400, 25);
+            this.IPBox.TabIndex = 1;
             // 
             // label1
             // 
@@ -67,17 +67,18 @@
             this.connectButton.TabIndex = 3;
             this.connectButton.Text = "Connect!";
             this.connectButton.UseVisualStyleBackColor = true;
+            this.connectButton.Click += new System.EventHandler(this.connectButton_Click);
             // 
-            // ConnetcionForm
+            // ConnectionForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(424, 430);
             this.Controls.Add(this.connectButton);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.IPBox);
             this.Controls.Add(this.logBox);
-            this.Name = "ConnetcionForm";
+            this.Name = "ConnectionForm";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -87,7 +88,7 @@
         #endregion
 
         private System.Windows.Forms.ListBox logBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox IPBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button connectButton;
     }

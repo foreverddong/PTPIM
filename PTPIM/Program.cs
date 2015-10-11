@@ -15,7 +15,7 @@ namespace PTPIM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ConnetcionForm());
+            Application.Run(new ConnectionForm());
         }
     }
 }
